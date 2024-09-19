@@ -13,12 +13,17 @@ Africa::Africa(Predators* Le, Herbivores* Gn):Continent()
 	 Leo = Le; 
 }
 
-void Africa::eat()
+void Africa::eatPrey()
 {
-	int Wg = Gnu->Getweight(); 
-	Leo->Eat(Wg); 
+	int Wg = Gnu->Getweight();
+	Leo->Eat(Wg);
+}
+
+void Africa::eatHerb()
+{
 	Gnu->eatgrass(); 
 }
+
 
 
 

@@ -10,6 +10,7 @@ class Africa : public Continent
 	Predators* Leo = new Lion(250); 
 public:
 	Africa(Predators* Ln, Herbivores* Gnu);
-	void eat();
+	void eatPrey();
+	void eatHerb();
 };
 

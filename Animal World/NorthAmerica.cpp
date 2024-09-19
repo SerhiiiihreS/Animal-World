@@ -13,9 +13,14 @@ NorthAmerica::NorthAmerica(Predators* Wf, Herbivores* Bs) :Continent()
 	Bis = Bs;
 }
 
-void NorthAmerica::eat()
+
+void NorthAmerica::eatPrey()
 {
-	int Wg = Bis->Getweight(); 
-	Wlf->Eat(Wg); 
-	Bis->eatgrass(); 
+	int Wg = Bis->Getweight();
+	Wlf->Eat(Wg);
+}
+
+void NorthAmerica::eatHerb()
+{
+	Bis->eatgrass();
 }

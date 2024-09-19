@@ -9,6 +9,7 @@ class NorthAmerica :public Continent
 	Predators* Wlf = new Wolf(250);
 public:
 	NorthAmerica(Predators* Bs, Herbivores* Wf);
-	void eat();
+	void eatPrey();
+	void eatHerb();
 };
 

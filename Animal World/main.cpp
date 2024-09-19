@@ -6,6 +6,7 @@
 #include "Lion.h"
 #include "Bison.h"  
 #include "NorthAmerica.h"
+#include "AnimalWorld.h"
 
 using namespace std;
 
@@ -19,6 +20,10 @@ int main() {
 	Predators* Wlf = new Wolf(200);
 	Continent* NAmr = new NorthAmerica(Wlf, Bis);
 
-	Afr->eat();
-	NAmr->eat();
+	AnimalWorld Eva(Afr, NAmr);
+	Eva.MealsHerb();
+	Eva.Nutritioncar();
+	Eva.MealsHerb();
+	Eva.Nutritioncar();
+	Eva.Nutritioncar();
 }

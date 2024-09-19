@@ -12,7 +12,9 @@ class Continent
 public:
 	Continent() = default;
 	Continent(Predators p, Herbivores h);
-	virtual void eat();
-
+	virtual void eatPrey();
+	virtual void eatHerb();
 };
+
+
 

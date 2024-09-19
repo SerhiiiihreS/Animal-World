@@ -8,10 +8,14 @@ using namespace std;
 
 Continent::Continent(Predators p, Herbivores h) 
 {
-} 
-
-void Continent::eat()
-{
-
 }
+void Continent::eatPrey()
+{
+}
+
+void Continent::eatHerb()
+{
+}
+
+
 
